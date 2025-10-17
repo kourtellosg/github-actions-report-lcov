@@ -119,6 +119,8 @@ async function genhtml(coverageFiles, tmpPath) {
 		args.push('--ignore-errors');
 		args.push(ignoreErrors);
 	}
+  args.push('--ignore-errors');
+  args.push('inconsistent');
 
   args.push('--output-directory');
   args.push(artifactPath);
